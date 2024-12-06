@@ -1,4 +1,5 @@
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
+    basic.showIcon(IconNames.ArrowWest)
     maqueen.writeLED(maqueen.Led.LedAll, maqueen.LedSwitch.LedOff)
     maqueen.writeLED(maqueen.Led.LedRight, maqueen.LedSwitch.LedOn)
     maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 100)
@@ -17,6 +18,7 @@ input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     basic.showIcon(IconNames.Heart)
 })
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
+    basic.showIcon(IconNames.ArrowEast)
     maqueen.writeLED(maqueen.Led.LedAll, maqueen.LedSwitch.LedOff)
     maqueen.writeLED(maqueen.Led.LedLeft, maqueen.LedSwitch.LedOn)
     maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 100)
